@@ -1,9 +1,24 @@
+'use client'
+
+import { useState, useEffect } from "react";
+import { Banner } from "@/components/Banner";
+import Infos from "@/components/Infos";
+import Services from "@/components/Services";
 export default function Home() {
+
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    fetch('/api/mock')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-      EM CONSTRUÇÃO ... 😊
-      </div>
+    <main className="flex flex-col items-center justify-between">
+      <Banner data={data} />
+      <Infos data={data} />
+      <Services />
     </main>
   );
 }
