@@ -1,0 +1,1 @@
+export const validUrl = window?.location?.hostname === 'localhost' ? '' : '.'
