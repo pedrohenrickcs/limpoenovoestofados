@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Button from "../common/Button";
 
-export const Banner = ({ data }: any) => {
+export const Banner = () => {
   return ( 
     <div className="w-full items-center justify-between text-sm lg:flex bg-primary-bg-color font-sans">
-      <div className="bg-primary-bg-color text-primary-text-color p-28 w-1/2">
-        <h1 className="text-5xl font-semibold pb-4">{data?.title}</h1>
-        <span className="text-2xl">{data?.description}</span>
+      <div className="bg-primary-bg-color text-primary-text-color p-28 md:w-1/2 w-full">
+        <h1 className="text-5xl font-semibold pb-4">Higienização Completa e Impermeabilização de Estofados</h1>
+        <span className="text-2xl">Tenha um estofado limpo e novo e toda sua família protegida das impurezas</span>
         <Button />
       </div>
 
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
         <Image src="./banner_v3.jpg" width={1000} height={500} alt="Limpo e novo estofados" />
       </div>
       
