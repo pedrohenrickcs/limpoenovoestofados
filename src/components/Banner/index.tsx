@@ -11,7 +11,7 @@ export const Banner = () => {
       </div>
 
       <div className="w-full md:w-1/2">
-        <Image src="/banner_v4.jpg" width={1000} height={500} alt="Limpo e novo estofados" />
+        <Image src="./banner_v4.jpg" width={1000} height={500} alt="Limpo e novo estofados" />
       </div>
       
     </div>
