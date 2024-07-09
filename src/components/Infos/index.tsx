@@ -2,7 +2,7 @@ import Check from "@/assets/icons/check";
 
 const Infos = () => {
   return ( 
-    <div className="container py-6 flex flex-col md:flex-row justify-center text-secondary-text-color">
+    <div className="container p-6 flex flex-col md:flex-row justify-center text-secondary-text-color">
       <div className="w-full md:w-1/3">
         <h2 className="text-4xl font-semibold py-4 relative">
           Higienização
