@@ -10,6 +10,8 @@ const config: Config = {
     colors: {
       'primary-bg-color': '#455073',
       'secondary-bg-color': '#e1a95a',
+      'third-bg-color': '#6077c0',
+
       'primary-text-color': '#fff',
       'secondary-text-color': '#455073',
       'white': '#fff'
