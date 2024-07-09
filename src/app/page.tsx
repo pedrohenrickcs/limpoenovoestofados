@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between">
-      <Banner data={data} />
-      <Infos data={data} />
+      <Banner />
+      <Infos />
       <Services />
     </main>
   );
