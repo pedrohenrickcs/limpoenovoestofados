@@ -8,9 +8,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'primary-bg-color': '#3a689f',
+      'primary-bg-color': '#455073',
+      'secondary-bg-color': '#e1a95a',
       'primary-text-color': '#fff',
-      'secondary-text-color': '#3a689f',
+      'secondary-text-color': '#455073',
       'white': '#fff'
     },
     extend: {
@@ -19,9 +20,6 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    zIndex: {
-      '-1': '-1',
     }
   },
   plugins: [],
