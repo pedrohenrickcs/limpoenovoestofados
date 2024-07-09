@@ -1,7 +1,6 @@
 import Check from "@/assets/icons/check";
 import Title from "../common/Title";
 import Button from "../common/Button";
-import Image from "next/image";
 
 const Infos = () => {
   return ( 

@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Button from "../common/Button";
-import { validUrl } from "@/utils/validImage";
 
 export const Banner = () => {
-
-  console.log('process', );
-  
   return ( 
     <div className="w-full items-center justify-between text-sm lg:flex bg-primary-bg-color font-sans">
       <div className="bg-primary-bg-color text-primary-text-color p-7 md:p-28 md:w-1/2 w-full">
@@ -15,7 +11,7 @@ export const Banner = () => {
       </div>
 
       <div className="w-full md:w-1/2">
-        <Image src={`/banner_v4.jpg`} width={1000} height={500} alt="Limpo e novo estofados" />
+        <Image src={`./banner_v4.jpg`} width={1000} height={500} alt="Limpo e novo estofados" />
       </div>
       
     </div>
