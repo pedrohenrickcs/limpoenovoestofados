@@ -36,7 +36,7 @@ const Services = () => {
         <Slider {...settings}>
           {items.map(item => (
             <div key={item.id} className="my-8">
-              <Image src={item.image} width={500} height={500} alt={item?.title} className="m-auto" />
+              <Image src={`.${item.image}`} width={500} height={500} alt={item?.title} className="m-auto" />
               <span className="absolute w-full h-full top-0 left-0 bg-white opacity-0 z-10 transition-opacity duration-300 hover:opacity-20 cursor-pointer"></span>
               <span className="text-3xl font-medium py-4 block">{item.title}</span>
             </div>
