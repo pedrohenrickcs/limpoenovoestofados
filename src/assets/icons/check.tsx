@@ -1,4 +1,4 @@
-const Check = ({ size = 50, color = 'currentColor' }) => {
+const Check = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

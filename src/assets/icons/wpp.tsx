@@ -1,4 +1,4 @@
-const Whatsapp = ({ size = 50, color = 'currentColor' }) => {
+const Whatsapp = ({ color = 'currentColor' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
