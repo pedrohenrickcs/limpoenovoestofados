@@ -21,7 +21,7 @@ const WhoUs = () => {
         </div>
 
         <div className="order-1 pb-4 md:pb-0 md:order-0">
-          <Image src="/quem-somos.jpg" width={600} height={600} alt="Quem somos" />
+          <Image src="./quem-somos.jpg" width={600} height={600} alt="Quem somos" />
         </div>
 
       </div> 
