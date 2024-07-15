@@ -15,6 +15,14 @@ export const items = [
             icon: '/check.svg',
             title: 'Eliminação de Odores',
         },
+        {
+            icon: '/check.svg',
+            title: 'Prevenção de Infestações',
+        },
+        {
+            icon: '/check.svg',
+            title: 'Adequado para uso em ambientes comerciais',
+        },
     ]
   },
 ]
