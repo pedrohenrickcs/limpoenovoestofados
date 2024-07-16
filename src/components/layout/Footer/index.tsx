@@ -36,7 +36,8 @@ const Footer = () => {
       </div>
       <div className="mt-8 py-7 bg-primary-bg-color">
         <p className="text-center text-sm text-gray-400">
-          Copyright © Limpo e novo estofados. Todos os direitos reservados.
+          Copyright 2024 © Limpo e novo estofados. Todos os direitos
+          reservados.
         </p>
       </div>
     </footer>
