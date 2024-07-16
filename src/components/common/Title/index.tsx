@@ -1,7 +1,8 @@
 export type ContenType = {
-  title: string
-  color: string
-  bgColor: string
+  title?: string
+  color?: string
+  bgColor?: string
+  textColor?: string
 }
 
 const Title = ({
