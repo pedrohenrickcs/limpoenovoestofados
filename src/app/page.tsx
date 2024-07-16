@@ -11,6 +11,7 @@ import {
   itemsServices,
   itemsServicesPerformed,
 } from '@/components/Services/mock'
+import Footer from '@/components/layout/Footer'
 export default function Home() {
   const bannerMock = items
   const infosMock = infos
@@ -22,7 +23,8 @@ export default function Home() {
       <Infos items={infosMock} benefits={true} id="benefits" />
       <Services items={itemsServices} id="services" />
       <Infos items={whoUs} contentImage={true} id="who-us" />
-      <Services items={itemsServicesPerformed} id="services" />
+      <Services items={itemsServicesPerformed} id="result-service" />
+      <Footer />
     </main>
   )
 }
