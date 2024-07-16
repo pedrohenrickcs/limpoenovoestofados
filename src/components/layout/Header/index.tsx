@@ -21,7 +21,7 @@ const Header = () => {
         <div className="w-full md:w-auto font-bold text-sm flex justify-center">
           <Link href="/">
             <Image
-              src="/logo.jpg"
+              src="./logo.jpg"
               width={80}
               height={80}
               alt="Limpo e novo estofados"
