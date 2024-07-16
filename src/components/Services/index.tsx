@@ -60,7 +60,7 @@ const Services = ({ items, id }: Items) => {
             <div key={item.id} className="my-8 text-center">
               <div className="relative">
                 <Image
-                  src={`.${item.image}`}
+                  src={`${item.image}`}
                   width={500}
                   height={500}
                   alt={item?.image}

@@ -83,7 +83,7 @@ const Infos = ({
         {contentImage && (
           <div className="order-1 pb-4 mt-8 md:mt-0 md:pb-0 md:order-0 self-center">
             <Image
-              src="./quem-somos.jpg"
+              src="/quem-somos.jpg"
               width={600}
               height={600}
               alt="Quem somos"
