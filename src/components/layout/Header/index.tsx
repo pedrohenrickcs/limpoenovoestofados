@@ -74,6 +74,18 @@ const Header = () => {
               Quem Somos
             </ScrollLink>
           </li>
+          <li className="p-5 md:hover:underline md:shadow-none shadow-md">
+            <ScrollLink
+              to="result-service"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="cursor-pointer"
+              onClick={closeNav}
+            >
+              Antes e depois
+            </ScrollLink>
+          </li>
         </ul>
       </nav>
     </header>
