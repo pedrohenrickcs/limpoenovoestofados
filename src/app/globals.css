@@ -12,3 +12,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.transition-transform {
+  transition: transform .3s ease-in-out;
+}
