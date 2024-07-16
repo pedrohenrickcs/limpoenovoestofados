@@ -22,7 +22,7 @@ export const Banner = (items: Items) => {
 
   return (
     <div
-      className={`w-full items-center justify-between text-sm lg:flex ${bgColor} font-sans`}
+      className={`w-full items-center justify-between text-sm lg:flex ${bgColor} font-sans mt-24 md:mt-27`}
     >
       <div className={`${bgColor} ${textColor} p-7 md:p-28 md:w-1/2 w-full`}>
         <h1 className="text-3xl md:text-5xl font-semibold pb-4">{title}</h1>

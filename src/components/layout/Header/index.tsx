@@ -1,36 +1,78 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
+import { FaTimes, FaBars } from 'react-icons/fa'
+import { Link as ScrollLink } from 'react-scroll'
 
 const Header = () => {
+  const [navOpen, setNavOpen] = useState(false)
+
+  const toggleNav = () => {
+    setNavOpen(!navOpen)
+  }
+
+  const closeNav = () => {
+    setNavOpen(false)
+  }
+
   return (
-    <header className="bg-gray-800 text-primary-bg-color w-full py-4">
-      <nav className="container mx-auto text-2xl font-medium flex justify-between items-center">
-        <div className="font-bold text-sm flex justify-center">
+    <header className="bg-white text-primary-bg-color w-full p-4 fixed z-10 shadow">
+      <nav className="container mx-auto text-xl font-medium flex justify-between items-center">
+        <div className="w-full md:w-auto font-bold text-sm flex justify-center">
           <Link href="/">
             <Image
-              src="/logo_v2.jpg"
-              width={100}
-              height={100}
+              src="/logo.jpg"
+              width={80}
+              height={80}
               alt="Limpo e novo estofados"
-              className="m-auto"
             />
           </Link>
         </div>
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="/" className="hover:text-gray-400">
+
+        <div className="lg:hidden">
+          <button onClick={toggleNav} className="focus:outline-none">
+            {navOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
+        </div>
+
+        <ul
+          className={`md:flex md:right-10 transition-transform transform md:transform-none ${navOpen ? 'translate-y-0' : 'translate-x-full'} bg-white absolute md:fixed top-24 md:top-auto md:left-auto left-0 w-full h-screen md:w-auto md:h-auto py-3`}
+        >
+          <li className={'p-5 md:hover:underline md:shadow-none shadow-md'}>
+            <ScrollLink
+              to="benefits"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="cursor-pointer"
+              onClick={closeNav}
+            >
               Benefícios
-            </Link>
+            </ScrollLink>
           </li>
-          <li>
-            <Link href="/" className="hover:text-gray-400">
+          <li className="p-5 md:hover:underline md:shadow-none shadow-md">
+            <ScrollLink
+              to="services"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="cursor-pointer"
+              onClick={closeNav}
+            >
               Nossos serviços
-            </Link>
+            </ScrollLink>
           </li>
-          <li>
-            <Link href="/" className="hover:text-gray-400">
+          <li className="p-5 md:hover:underline md:shadow-none shadow-md">
+            <ScrollLink
+              to="who-us"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              className="cursor-pointer"
+              onClick={closeNav}
+            >
               Quem Somos
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </nav>

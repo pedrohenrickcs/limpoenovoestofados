@@ -13,9 +13,10 @@ type ContentServices = {
 
 type Items = {
   items: ContentServices[]
+  id?: string
 }
 
-const Services = ({ items }: Items) => {
+const Services = ({ items, id }: Items) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -36,10 +37,9 @@ const Services = ({ items }: Items) => {
   }
 
   return (
-    <div className="w-full flex justify-center my-0 md:my-16">
+    <div className="w-full flex justify-center my-0 md:my-16" id={id}>
       <div className="container px-6 md:px-0">
         <Title title="Nosso serviços" />
-
         <Slider {...settings}>
           {items.map((item) => (
             <div key={item.id} className="my-8 text-center">

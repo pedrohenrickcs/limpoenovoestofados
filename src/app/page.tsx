@@ -16,9 +16,9 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       <Header />
       <Banner items={bannerMock} />
-      <Infos items={infosMock} benefits={true} />
-      <Services items={itemsServices} />
-      <Infos items={whoUs} contentImage={true} />
+      <Infos items={infosMock} benefits={true} id="benefits" />
+      <Services items={itemsServices} id="services" />
+      <Infos items={whoUs} contentImage={true} id="who-us" />
     </main>
   )
 }

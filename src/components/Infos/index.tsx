@@ -20,9 +20,15 @@ type Items = {
   items: ContentType[]
   contentImage?: boolean
   benefits?: boolean
+  id?: string
 }
 
-const Infos = ({ items, contentImage = false, benefits = false }: Items) => {
+const Infos = ({
+  items,
+  contentImage = false,
+  benefits = false,
+  id,
+}: Items) => {
   const title = items[0].title
   const description = items[0].description
   const itemsInfos = items[0]?.itemsInfos
@@ -30,15 +36,15 @@ const Infos = ({ items, contentImage = false, benefits = false }: Items) => {
   const textColor = items[0].textColor || 'text-secondary-text-color'
 
   return (
-    <div className={`flex ${bgColor} w-full justify-center`}>
+    <div className={`flex ${bgColor} w-full justify-center`} id={id}>
       <div
         className={`container p-6 flex flex-col md:flex-row justify-center md:justify-between ${textColor}`}
       >
         <div className="w-full md:w-1/2">
           <Title title={title} textColor={textColor} bgColor={bgColor} />
-          <p className="pt-4 text-base md:text-xl">
+          <div className="pt-4 text-base md:text-xl">
             <div dangerouslySetInnerHTML={{ __html: description }} />
-          </p>
+          </div>
           <div className="hidden md:flex">
             <Button type="secondary" />
           </div>
