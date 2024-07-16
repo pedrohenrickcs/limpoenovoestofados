@@ -5,23 +5,23 @@ export const infos = [
       'Os estofados são uma parte essencial de nossas casas e escritórios, proporcionando conforto e estilo aos nossos ambientes. No entanto, muitas vezes negligenciamos a necessidade de mantê-los limpos e higienizados. A higienização regular dos estofados é crucial por várias razões',
     itemsInfos: [
       {
-        icon: './check.svg',
+        icon: '/check.svg',
         title: 'Saúde e Bem-Estar',
       },
       {
-        icon: './check.svg',
+        icon: '/check.svg',
         title: 'Durabilidade e Aparência',
       },
       {
-        icon: './check.svg',
+        icon: '/check.svg',
         title: 'Eliminação de Odores',
       },
       {
-        icon: './check.svg',
+        icon: '/check.svg',
         title: 'Prevenção de Infestações',
       },
       {
-        icon: './check.svg',
+        icon: '/check.svg',
         title: 'Adequado para uso em ambientes comerciais',
       },
     ],
@@ -36,5 +36,8 @@ export const whoUs = [
             eficiência e atenção aos detalhes.<br /><br />
             Nossa missão é superar as expectativas dos nossos clientes, entregando resultados excepcionais e um atendimento personalizado. Seja para residências, escritórios ou ambientes comerciais, estamos prontos para renovar seus estofados e contribuir para um espaço mais agradável e higienizado.<br /><br />
             Obrigado por escolher a <b>Limpo e novo estofados</b>. Estamos ansiosos para servi-lo e demonstrar por que somos a escolha ideal para a limpeza de seus estofados.`,
+    bgColor: 'bg-third-bg-color',
+    textColor: 'text-primary-text-color',
+    underlineColor: 'bg-white',
   },
 ]

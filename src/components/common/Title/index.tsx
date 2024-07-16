@@ -1,19 +1,21 @@
 export type ContenType = {
   title?: string
   color?: string
-  bgColor?: string
   textColor?: string
+  underlineColor?: string
 }
 
 const Title = ({
   title,
-  color = 'text-secondary-text-color',
-  bgColor = 'bg-primary-bg-color',
+  textColor = 'text-secondary-text-color',
+  underlineColor = 'bg-primary-bg-color',
 }: ContenType) => {
   return (
-    <h2 className={`text-4xl font-semibold py-4 relative ${color}`}>
+    <h2 className={`text-4xl font-semibold py-4 relative ${textColor}`}>
       {title}
-      <span className={`w-14 h-1 absolute ${bgColor} bottom-0 left-0`}></span>
+      <span
+        className={`w-14 h-1 absolute ${underlineColor} bottom-0 left-0`}
+      ></span>
     </h2>
   )
 }

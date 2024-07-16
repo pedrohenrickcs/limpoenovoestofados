@@ -16,3 +16,7 @@ body {
 .transition-transform {
   transition: transform .3s ease-in-out;
 }
+
+.slick-dots {
+  bottom: 15px!important;
+}

@@ -7,7 +7,10 @@ import Header from '@/components/layout/Header'
 
 import { items } from '@/components/Banner/mock'
 import { infos, whoUs } from '@/components/Infos/mock'
-import { itemsServices } from '@/components/Services/mock'
+import {
+  itemsServices,
+  itemsServicesPerformed,
+} from '@/components/Services/mock'
 export default function Home() {
   const bannerMock = items
   const infosMock = infos
@@ -19,6 +22,7 @@ export default function Home() {
       <Infos items={infosMock} benefits={true} id="benefits" />
       <Services items={itemsServices} id="services" />
       <Infos items={whoUs} contentImage={true} id="who-us" />
+      <Services items={itemsServicesPerformed} id="services" />
     </main>
   )
 }
