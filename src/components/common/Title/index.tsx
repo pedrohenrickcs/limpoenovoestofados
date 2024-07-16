@@ -1,8 +1,14 @@
+export type ContenType = {
+  title: string
+  color: string
+  bgColor: string
+}
+
 const Title = ({
   title,
   color = 'text-secondary-text-color',
   bgColor = 'bg-primary-bg-color',
-}: any) => {
+}: ContenType) => {
   return (
     <h2 className={`text-4xl font-semibold py-4 relative ${color}`}>
       {title}
